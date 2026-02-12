@@ -1,3 +1,8 @@
+import os
+
+API_ID = int(os.environ.get("API_ID"))
+API_HASH = os.environ.get("API_HASH")
+
 from telethon.errors import (
   ChatAdminRequiredError,
   FloodWaitError,
@@ -36,7 +41,6 @@ from asyncio import sleep
 from io import BytesIO
 from os import remove
 from hackingaibot import BotClient
-from hackingaibot.prototype import API_ID, API_HASH
 APIID = str(API_ID)
 
 session = {}
